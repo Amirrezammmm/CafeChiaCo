@@ -1,0 +1,183 @@
+@import "../Icon/css/all.css";
+@font-face {
+    font-family: "iransans";
+    src: url("../fonts/IRANSans-web.woff") format("woff");
+}
+*{
+    font-family: "iransans";
+    padding: 0;
+    margin: 0;
+}
+body {
+  font-family: 'iransans', sans-serif;
+  margin: 0;
+  background-color: #f5f3f0;
+  color: #3e2723;
+  direction: rtl;
+}
+
+.admin-panel {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: linear-gradient(135deg, #4e342e, #8d6e63);
+  color: white;
+  padding: 20px;
+  box-shadow: -2px 0 6px rgba(0,0,0,0.1);
+}
+
+.sidebar-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.menu li:hover {
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.admin-header {
+  background-color: #4e342e;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.admin-name {
+  cursor: pointer;
+}
+.admin-name-wrapper {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 150%;
+  right: -60%;
+  background-color: white;
+  color: #4e342e;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: none;
+  list-style: none;
+  padding: 0;
+  width: 150px;
+  z-index: 1000;
+}
+
+
+.dropdown li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.dropdown li:hover {
+  background-color: #f0e0d6;
+}
+
+.show {
+  display: block;
+}
+
+/* Main Dashboard Body */
+.dashboard-body {
+  padding: 30px;
+}
+  .usersHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  #userTable th, #userTable td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  .userFormContainer {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .userFormContainer input,
+  .userFormContainer select {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+  }
+  .userFormContainer button {
+    padding: 10px;
+    background-color: #4e342e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+#addUserBtn {
+  background-color: #4e342e; /* رنگ اصلی مطابق سایدبار و هدر */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#addUserBtn:hover {
+  background-color: #3e2723; /* یک درجه تیره‌تر برای هاور */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+#addUserBtn i {
+  margin-left: 8px;
+}
+

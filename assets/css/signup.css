@@ -1,0 +1,73 @@
+@import "../Icon/css/all.css";
+@font-face {
+    font-family: "iransans";
+    src: url("../fonts/IRANSans-web.woff") format("woff");
+}
+*{
+    font-family: "iransans";
+    padding: 0;
+    margin: 0;
+}
+body {
+      background-color: #f5f3f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .auth-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #4e342e, #8d6e63);
+      color: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      width: 350px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .auth-box h2 {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .auth-box input {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+    .auth-box button {
+      width: 100%;
+      padding: 0.6rem;
+      background-color: #fff3e0;
+      color: #4e342e;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .auth-box button:hover {
+      background-color: #ffe0b2;
+    }
+    .auth-box p {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .auth-box a {
+      color: #fff8e1;
+      text-decoration: underline;
+    }
+    #signupForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+   #signupForm input{
+        width: 100%;
+    }

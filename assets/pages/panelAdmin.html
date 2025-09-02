@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/panelAdmin.css">
+    <link rel="icon" type="image/x-icon" href="../img/cafe.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>پنل ادمین</title>
+</head>
+<body>
+      <div class="admin-panel">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-title">مدیریت</div>
+      <ul class="menu">
+        <li class="clickableUsers"><i class="fas fa-users"></i> کاربران</li>
+        <li class="clickableProducts"><i class="fas fa-box-open"></i> محصولات</li>
+        <li class="clickableTikets"><i class="fas fa-ticket-alt"></i> تیکت‌ها</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header -->
+      <header class="admin-header">
+        <div class="admin-name-wrapper">
+          <div class="admin-name" onclick="toggleDropdown()">
+            <i class="fas fa-user-circle"></i> ادمین
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <ul class="dropdown" id="adminDropdown">
+            <li><i class="fas fa-user"></i> پروفایل کاربری</li>
+            <li><i class="fas fa-sign-out-alt"></i> خروج</li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- Main body -->
+      <div class="dashboard-body">
+        <div class="welcome">
+            <!-- <h2>به پنل مدیریت خوش آمدید</h2>
+            <p>لطفاً از منو سمت راست گزینه مورد نظر را انتخاب کنید.</p> -->
+        </div>
+        <div class="Users">
+          <!-- User Management Section in .Users div -->
+          <div class="usersHeader">
+            <!-- Search Input -->
+            <div class="search-container">
+              <input type="text" id="userSearchInput" placeholder="جستجوی کاربر...">
+              <i class="fas fa-search"></i>
+            </div>
+
+            <!-- Add User Button -->
+            <button id="addUserBtn"><i class="fas fa-user-plus"></i> افزودن کاربر</button>
+          </div>
+
+          <!-- User Table -->
+          <table id="userTable">
+            <thead>
+              <tr>
+                <th>نام</th>
+                <th>نام کاربری</th>
+                <th>ایمیل</th>
+                <th>رمز عبور</th>
+                <th>نقش</th>
+                <th>عملیات</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+          <!-- Edit/Add User Form -->
+          <div class="userFormContainer" style="display:none;">
+            <h3 id="formTitle">افزودن/ویرایش کاربر</h3>
+            <form id="userForm">
+              <input type="text" id="name" placeholder="نام" required>
+              <input type="text" id="username" placeholder="نام کاربری" required>
+              <input type="email" id="email" placeholder="ایمیل" required>
+              <input type="text" id="password" placeholder="رمز عبور" required>
+              <select id="role">
+                <option value="0">مدیر</option>
+                <option value="1">کاربر</option>
+              </select>
+              <button type="submit">ذخیره</button>
+            </form>
+          </div>
+        </div>
+        <div class="Products"></div>
+        <div class="Tikets"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="../js/panelAdmin.js"></script>
+</html>

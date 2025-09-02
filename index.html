@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="Fa_IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/cafe.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>کافی شاپ</title>
+</head>
+<body dir="rtl">
+    <header>
+    <h1><a href="/index.html">کافه چیاکو</a></h1>
+    <p>جایی برای لحظاتی دنج با طعم قهوه ناب</p>
+    <nav>
+      <a href="/index.html">خانه</a>
+      <a href="#categoryGrid">منوی کافه</a>
+      <a href="#">درباره ما</a>
+      <a href="#">تماس با ما</a>
+    </nav>
+    <div class="search-container">
+      <div class="con" id="with20"></div>
+      <div class="con">
+        <div class="search-bar-wrapper" style="position: relative;">
+          <div class="search-bar">
+            <input type="text" placeholder="جستجو..." id="searchInput" oninput="searchProducts()" autocomplete="off">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+          <ul id="searchResults" class="search-results hidden"></ul>
+        </div>
+      </div>
+      <div class="con">
+          <div class="auth-buttons">  
+          <button><a href="assets/pages/login.html">ورود</a></button>
+          <button><a href="assets/pages/signup.html">ثبت‌نام</a></button>
+          <button class="cart-button" aria-label="سبد خرید">
+            <span class="cart-total"></span>
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </button>
+          
+        </div>
+      </div>
+    </div>
+    </header>
+  <main class="categories">
+    <h2>دسته‌بندی محصولات</h2>
+    <div class="category-grid" id="categoryGrid">
+      
+      <!-- همه محصولات -->
+      <div class="category-card">
+        <img src="assets/img/coffee-menu.png" alt="همه محصولات">
+        <span>همه محصولات</span>
+      </div>
+
+      <!-- نوشیدنی‌های گرم -->
+      <div class="category-card">
+        <img src="assets/img/coffee.png" alt="نوشیدنی‌های گرم">
+        <span>نوشیدنی‌های گرم</span>
+      </div>
+
+      <!-- نوشیدنی‌های سرد -->
+      <div class="category-card">
+        <img src="assets/img/iced-coffee.png" alt="نوشیدنی‌های سرد">
+        <span>نوشیدنی‌های سرد</span>
+      </div>
+
+      <!-- لاته -->
+      <div class="category-card">
+        <img src="assets/img/latte-art.png" alt="لاته">
+        <span>لاته</span>
+      </div>
+
+      <!-- آب‌میوه -->
+      <div class="category-card">
+        <img src="assets/img/orange-juice.png" alt="آب‌میوه">
+        <span>آب‌میوه</span>
+      </div>
+
+      <!-- آیس کافی -->
+      <div class="category-card">
+        <img src="assets/img/iced-latte.png" alt="آیس کافی">
+        <span>آیس کافی</span>
+      </div>
+
+    </div>
+
+    <div id="tab-content"></div>
+  </main>
+
+  <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h3>کافه چیاکو</h3>
+      <p>آرامش در هر جرعه</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>لینک‌های مفید</h4>
+      <ul>
+        <li><a href="#">خانه</a></li>
+        <li><a href="#">منو</a></li>
+        <li><a href="#">درباره ما</a></li>
+        <li><a href="#">تماس با ما</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>راه‌های ارتباطی</h4>
+      <p>تهران، خیابان آزادی، پلاک ۲۴</p>
+      <p>۰۲۱-۱۲۳۴۵۶۷۸</p>
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="اینستاگرام"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="تلگرام"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="واتساپ"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© ۲۰۲۵ تمامی حقوق محفوظ است | طراحی شده توسط امیررضا</p>
+  </div>
+  </footer>
+  
+
+</body> 
+    <script src="assets/js/main.js"></script>
+</html>
